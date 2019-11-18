@@ -1,5 +1,18 @@
 {
-  "extends": [
-    "config:base"
-  ]
+  "extends": ["config:base"],
+  "assignees": ["asjas"],
+  "assignAutomerge": true,
+  "labels": ["renovate-bot"],
+  "packageRules": [
+    {
+      "packagePatterns": ["vue"],
+      "groupName": "vuejs"
+    },
+    {
+      "packagePatterns": ["eslint"],
+      "groupName": "eslint"
+    }
+  ],
+  "automerge": true,
+  "automergeType": "branch"
 }
