@@ -4,19 +4,11 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --modern",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "core-js": "3.4.1",
-    "vue": "2.6.10",
-    "vue-class-component": "7.1.0",
-    "vue-property-decorator": "8.3.0"
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.7.0",
-    "@typescript-eslint/parser": "^2.7.0",
     "@vue/cli-plugin-babel": "4.0.5",
     "@vue/cli-plugin-e2e-cypress": "4.0.5",
     "@vue/cli-plugin-eslint": "4.0.5",
@@ -24,9 +16,17 @@
     "@vue/cli-service": "4.0.5",
     "@vue/eslint-config-airbnb": "5.0.0",
     "@vue/eslint-config-typescript": "5.0.0",
+    "core-js": "3.4.1",
+    "vue": "2.6.10",
+    "vue-class-component": "7.1.0",
+    "vue-property-decorator": "8.3.0",
+    "vue-template-compiler": "2.6.10"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
     "eslint": "6.6.0",
     "eslint-plugin-vue": "6.0.1",
-    "typescript": "3.7.2",
-    "vue-template-compiler": "2.6.10"
+    "typescript": "3.7.2"
   }
 }
