@@ -40,7 +40,7 @@
         <hr />
         <li>Login</li>
         <li>
-          <button>Sign Up</button>
+          <button class="button header__button">Sign Up</button>
         </li>
       </ul>
     </nav>
@@ -54,7 +54,7 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Header extends Vue {
   pressed: boolean = false;
 
-  handleMenu($event: any): void {
+  handleMenu(): void {
     this.pressed = !this.pressed;
   }
 }
@@ -68,49 +68,42 @@ export default class Header extends Vue {
   padding: 30px 20px 10px 20px;
 }
 .header__logo {
-  color: #000;
+  color: var(--black);
 }
 .header__menu {
-  color: hsl(0, 0%, 75%);
-  width: 28px;
-  justify-self: end;
+  color: var(--gray);
   cursor: pointer;
+  justify-self: end;
+  width: 28px;
 }
-nav {
+.header__nav {
+  background: var(--dark-violet);
+  border-radius: 15px;
+  color: var(--white);
   display: block;
-  position: absolute;
-  top: 85px;
   left: 20px;
+  position: absolute;
   right: 20px;
   text-align: center;
-  border-radius: 15px;
-  background: var(--dark-violet);
-  color: #fff;
+  top: 85px;
 }
 ul {
   list-style-type: none;
   padding: 0;
 }
 hr {
-  width: 80%;
   border: 1px solid var(--gray);
+  width: 80%;
 }
 li {
-  font-size: 16px;
   display: block;
+  font-size: var(--font-medium);
   margin: 0 10px;
   padding: 12px 0;
 }
-button {
-  font-size: 16px;
+.header__button {
   justify-self: center;
-  color: white;
-  background: var(--cyan);
-  border: 0;
-  border-radius: 40px;
   width: 100%;
   max-width: 280px;
-  height: 42px;
-  font-family: "Poppins", sans-serif;
 }
 </style>

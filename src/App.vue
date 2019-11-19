@@ -27,21 +27,25 @@ export default class App extends Vue {}
   --cyan: hsl(180, 66%, 49%);
   --read: hsl(0, 87%, 67%);
   --gray: hsl(0, 0%, 75%);
+  --white: #ffffff;
+  --black: #000000;
   --grayish-violet: hsl(257, 7%, 63%);
   --dark-violet: hsl(257, 27%, 26%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
+  --font-large: 18px;
+  --font-medium: 16px;
+  --font-small: 14px;
 }
 html,
 body {
   height: 100%;
   font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 body {
-  margin: 0;
-  font-size: 18px;
+  font-size: var(--font-large);
 }
 .sr-only {
   border: 0;
@@ -51,7 +55,17 @@ body {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
   white-space: nowrap;
+  width: 1px;
+}
+.button {
+  background: var(--cyan);
+  border-radius: 40px;
+  border: 0;
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font-medium);
+  height: 42px;
+  width: 150px;
 }
 </style>

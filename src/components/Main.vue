@@ -114,10 +114,7 @@
             fill="#2BD0D0"
             d="M257.085 390.874l-50.787-10.046c-3.574-.717-5.884-4.13-5.168-7.636.732-3.5 4.21-5.764 7.785-5.066l50.787 10.027c3.574.717 5.884 4.13 5.168 7.637-.723 3.507-4.204 5.781-7.785 5.084z"
           />
-          <path
-            fill="#2BD0D0"
-            d="M226 310h14v59c0 3.866-3.133 7-6.997 7a6.999 6.999 0 01-6.996-7v-59H226z"
-          />
+          <path fill="#2BD0D0" d="M226 310h14v59c0 3.866-3.133 7-6.997 7a6.999 6.999 0 01-6.996-7v-59H226z" />
           <path
             fill="#2BD0D0"
             d="M231.187 386.708l-24.537 7.025c-3.568 1.014-7.314-.949-8.375-4.388-1.047-3.44.987-7.05 4.548-8.074l24.537-7.005c3.564-1.01 7.304.948 8.368 4.381 1.039 3.435-.99 7.034-4.541 8.06z"
@@ -276,18 +273,15 @@
             fill="#51466B"
             d="M398 251.277L391.322 255s-10.888-2.23-10.299-3.863c.59-1.632 11.995-3.205 11.995-3.205v-65.809c-.138-.152-1.807-1.898-5.703-3.318a28.64 28.64 0 00-4.452-1.195c-2.442-1.28.255-3.51 4.046-3.61 3.228.445 9.585 4.028 9.998 6.073.412 2.044 1.093 71.204 1.093 71.204z"
           />
-          <path
-            fill="url(#u)"
-            d="M263 389c-.881 1.001-1.29 1.37-.77.547.27-.159.527-.342.77-.547z"
-          />
+          <path fill="url(#u)" d="M263 389c-.881 1.001-1.29 1.37-.77.547.27-.159.527-.342.77-.547z" />
         </g>
       </svg>
     </div>
     <h1 class="main__heading">More than just shorter links</h1>
-    <p
-      class="main__branding"
-    >Build your brand's recognition and get detailed insights on how your links are performing.</p>
-    <button class="main__button">Get Started</button>
+    <p class="main__branding">
+      Build your brand's recognition and get detailed insights on how your links are performing.
+    </p>
+    <button class="button main__button">Get Started</button>
   </main>
 </template>
 
@@ -327,18 +321,11 @@ export default class Main extends Vue {}
 }
 .main__branding {
   color: var(--gray);
-  font-size: 15px;
+  font-size: var(--font-medium);
+  line-height: 1.3;
 }
 .main__button {
-  font-size: 16px;
   justify-self: center;
-  color: white;
-  background: var(--cyan);
-  border: 0;
-  border-radius: 40px;
-  width: 150px;
   margin-top: 25px;
-  height: 42px;
-  font-family: "Poppins", sans-serif;
 }
 </style>
