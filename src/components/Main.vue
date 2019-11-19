@@ -277,18 +277,38 @@
         </g>
       </svg>
     </div>
-    <h1 class="main__heading">More than just shorter links</h1>
-    <p class="main__branding">
+    <h1>More than just shorter links</h1>
+    <p>
       Build your brand's recognition and get detailed insights on how your links are performing.
     </p>
     <button class="button main__button">Get Started</button>
+    <Form />
+    <Branding />
+    <div class="main__cta">
+      <svg xmlns="http://www.w3.org/2000/svg" width="375" height="300">
+        <g fill="#4B3F6B" fill-rule="evenodd">
+          <path
+            d="M-263.351 570.909c29.685 77.331 73.689 123.988 171.79 127.377 98.102 3.39 167.085-60.547 256.043-73.22 88.958-12.674 135.24 107.895 240.73 152.532 105.488 44.638 274.775.333 377.9-125.622C886.24 526.021 878.62 327.29 799.392 238.798 720.162 150.307 608.257 84.743 243.5 224.76c-364.757 140.017-536.537 268.818-506.852 346.149zM-514-377.482c0 82.833 24.36 142.16 114.732 180.482 90.371 38.321 177.686 3.352 265.277 23.4 87.59 20.048 87.59 149.195 170.077 228.671 82.486 79.476 256.405 98.781 397.82 18.15 141.415-80.632 205.52-268.896 163.267-379.902C554.919-417.687 473.943-519 83.236-519S-514-460.314-514-377.482z"
+          />
+        </g>
+      </svg>
+      <h4>Boost your links today</h4>
+      <button class="button">Get Started</button>
+    </div>
   </main>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Form from "./Form.vue";
+import Branding from "./Branding.vue";
 
-@Component
+@Component({
+  components: {
+    Form,
+    Branding,
+  },
+})
 export default class Main extends Vue {}
 </script>
 
@@ -309,23 +329,39 @@ export default class Main extends Vue {}
   padding-bottom: 20px;
   display: block;
 }
-.main__heading,
-.main__branding {
+.main h1,
+.main p {
   text-align: center;
-  margin: 10px 25px 0 25px;
-}
-.main__heading {
-  color: var(--very-dark-violet);
-  font-size: 32px;
-  line-height: 1.2;
-}
-.main__branding {
-  color: var(--gray);
-  font-size: var(--font-medium);
-  line-height: 1.3;
 }
 .main__button {
   justify-self: center;
   margin-top: 25px;
+}
+.main__cta {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--dark-violet);
+  height: 300px;
+  overflow: hidden;
+}
+.main__cta svg {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+.main__cta h4 {
+  color: var(--white);
+  z-index: 10;
+}
+.main__cta button {
+  width: 180px;
+  font-size: var(--font-large);
+  height: 52px;
+  z-index: 10;
 }
 </style>
