@@ -8,7 +8,7 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
-    name: Build Vue.js site and deploy to Cloudflare Workers
+    name: Build Nuxt.js site and deploy to Cloudflare Workers
     steps:
       - name: Checkout Git Source
         uses: actions/checkout@master
@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --prod --pure-lockfile
 
-      - name: Build Vue.js website
-        run: yarn run build
+      - name: Build Nuxt.js website
+        run: yarn run generate
 
       - name: Publish to Cloudflare Workers
         uses: cloudflare/wrangler-action@1.1.0

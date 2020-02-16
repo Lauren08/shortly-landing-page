@@ -1,7 +1,10 @@
 <template>
   <section class="branding">
     <h2>Advanced Statistics</h2>
-    <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+    <p>
+      Track how your links are performing across the web with our advanced
+      statistics dashboard.
+    </p>
     <div class="brand__card">
       <div class="brand__icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
@@ -13,8 +16,8 @@
       </div>
       <h3>Brand Recognition</h3>
       <p>
-        Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil
-        confidence in your content.
+        Boost your brand recognition with each click. Generic links don't mean a
+        thing. Branded links help instil confidence in your content.
       </p>
     </div>
     <div class="brand__card">
@@ -28,8 +31,8 @@
       </div>
       <h3>Detailed Records</h3>
       <p>
-        Gain insights into who is clicking your links. Knowing when and where people engage with your content helps
-        inform better decisions.
+        Gain insights into who is clicking your links. Knowing when and where
+        people engage with your content helps inform better decisions.
       </p>
     </div>
     <div class="brand__card">
@@ -43,23 +46,16 @@
       </div>
       <h3>Fully Customizable</h3>
       <p>
-        Improve brand awareness and content discoverabilty through customizable links, supercharging audience
-        engagement.
+        Improve brand awareness and content discoverabilty through customizable
+        links, supercharging audience engagement.
       </p>
     </div>
   </section>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-
-@Component
-export default class Branding extends Vue {}
-</script>
-
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.branding h2 {
+<style>
+/* .branding h2 {
   text-align: center;
 }
 .branding p {
@@ -96,5 +92,5 @@ svg {
   position: absolute;
   left: 20px;
   top: 22px;
-}
+} */
 </style>

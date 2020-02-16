@@ -1,5 +1,5 @@
 account_id = "d34e365e96c3cd636081f05b0a6b031a"
-name = "url-shorten-landing-page"
+name = "shortly-landing-page-website"
 type = "webpack"
 route = "https://shortly.asjas.xyz/*"
 workers_dev = false
