@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col overflow-hidden mt-6 w-full h-auto">
     <svg
-      class="block pl-5 pb-5 h-64 mx-auto"
+      class="block pl-6 pb-5 h-64 mx-auto"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 733 482"
     >
@@ -417,18 +417,18 @@
       <!-- #endregion -->
     </svg>
     <h1
-      class="w-11/12 mt-2 mx-auto py-1 text-4xl leading-4xl text-center font-bold"
+      class="w-11/12 mt-5 py-2 mx-auto text-4xl leading-4xl text-center font-bold"
     >
       More than just shorter links
     </h1>
     <p
-      class="w-11/12 mt-2 mx-auto pl-1 pr-1 leading-2xl text-center text-neutral-grayishvoilet font-semibold"
+      class="w-11/12 mx-auto leading-2xl text-center text-neutral-grayishvoilet font-semibold"
     >
       Build your brand's recognition and get detailed insights on how your links
       are performing.
     </p>
     <button
-      class="h-16 w-48 mt-6 mb-1 mx-auto border-0 bg-cyan rounded-full outline-none focus:outline-none focus:shadow-outline text-white text-lg font-bold"
+      class="h-14 w-48 mt-8 mb-4 mx-auto border-0 bg-cyan rounded-full outline-none focus:outline-none focus:shadow-outline text-white text-lg font-bold"
     >
       Get Started
     </button>
