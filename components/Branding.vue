@@ -9,7 +9,7 @@
       Track how your links are performing across the web with our advanced
       statistics dashboard.
     </p>
-    <div class="flex mt-24 justify-center">
+    <div class="flex my-24 justify-center">
       <div class="blue-line absolute"></div>
       <div class="flex flex-col relative">
         <div class="brand-card">
@@ -62,8 +62,7 @@
   </section>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 .brand-card {
   @apply flex flex-col relative w-11/12 mx-auto px-8 py-10 rounded-md bg-white;
 }
