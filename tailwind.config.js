@@ -24,6 +24,7 @@ module.exports = {
       desktop: "1440px"
     },
     fontSize: {
+      micro: ".666rem",
       tiny: ".833rem",
       small: ".888rem",
       base: "1rem",
@@ -31,15 +32,19 @@ module.exports = {
       xl: "1.22rem",
       "2xl": "1.55rem",
       "3xl": "1.77rem",
-      "4xl": "2.33rem",
-      "5xl": "3rem",
-      "6xl": "4rem",
-      "7xl": "5rem"
+      "4xl": "2.33rem"
     },
     lineHeight: {
       xl: "1.44rem",
       "2xl": "1.66rem",
+      "3xl": "2rem",
       "4xl": "2.66rem"
+    },
+    borderWidth: {
+      default: "1px",
+      "0": "0",
+      "2": "2px",
+      "3": "3px"
     },
     spacing: {
       1: "4px",

@@ -24,7 +24,7 @@
       width="32"
       height="32"
       @click="handleMenu"
-      @keyup.space="handleMenu"
+      @keyup.enter="handleMenu"
     >
       <title id="header-menu">Menu</title>
       <path
@@ -32,48 +32,25 @@
         d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z"
       />
     </svg>
-    <nav
-      v-if="pressed"
-      class="absolute w-11/12 max-w-sm block left-0 right-0 top-0 mt-24 mx-auto bg-darkvoilet rounded-lg text-center"
-    >
+    <nav v-if="pressed" class="mobile-nav">
       <ul class="list-none p-5">
         <li>
-          <a
-            class="block no-underline mr-2 ml-2 pt-3 pb-3 focus:shadow-outline text-white font-semibold"
-            href="#"
-            >Features</a
-          >
+          <a class="nav-item" href="#">Features</a>
         </li>
         <li>
-          <a
-            class="block no-underline mr-2 ml-2 pt-3 pb-3 focus:shadow-outline text-white font-semibold"
-            href="#"
-            >Pricing</a
-          >
+          <a class="nav-item" href="#">Pricing</a>
         </li>
         <li>
-          <a
-            class="block no-underline mr-2 ml-2 pt-3 pb-8 focus:shadow-outline text-white font-semibold"
-            href="#"
-            >Resources</a
-          >
+          <a class="nav-item" href="#">Resources</a>
         </li>
         <li aria-hidden="true">
-          <hr class="m-auto w-10/12 border-neutral-gray" />
+          <hr class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet" />
         </li>
         <li>
-          <a
-            class="block no-underline mr-2 ml-2 pt-8 pb-3 focus:shadow-outline text-white font-semibold"
-            href="#"
-            >Login</a
-          >
+          <a class="nav-item" href="#">Login</a>
         </li>
-        <li class="pt-4 pb-4">
-          <button
-            class="w-full max-w-sm h-12 bg-cyan border-0 rounded-full outline-none focus:outline-none focus:shadow-outline text-white"
-          >
-            Sign Up
-          </button>
+        <li class="my-4">
+          <button class="btn nav-btn">Sign Up</button>
         </li>
       </ul>
     </nav>
@@ -94,3 +71,21 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.mobile-nav {
+  @apply absolute w-11/12 max-w-sm block left-0 right-0 top-0 mt-24 mx-auto bg-darkvoilet rounded-lg text-center;
+}
+
+.nav-item {
+  @apply block no-underline mx-2 py-3 text-white font-semibold;
+}
+
+.nav-item:focus {
+  @apply shadow-outline;
+}
+
+.nav-btn {
+  @apply w-full max-w-sm h-12;
+}
+</style>
