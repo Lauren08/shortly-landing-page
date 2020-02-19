@@ -20,7 +20,7 @@ export default {
       }
     ]
   },
-  loading: { color: "#fff" },
+  loading: { color: "#2ACFCF" },
   css: [],
   plugins: [],
   buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
