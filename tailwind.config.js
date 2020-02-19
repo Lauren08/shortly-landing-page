@@ -9,7 +9,7 @@ module.exports = {
       },
       neutral: {
         gray: "#BFBFBF",
-        graybackground: "#EFF1F7",
+        lightgray: "#EFF1F7",
         grayishvoilet: "#9E9AA7",
         verydarkblue: "#35323E",
         verydarkvoilet: "#232127"
