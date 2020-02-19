@@ -25,24 +25,18 @@
         type="text"
         placeholder="Shorten a link here..."
       />
-      <span
-        v-show="error"
-        id="error-message"
-        aria-live="polite"
-        class="error-message"
-      >{{ errorMessage }}</span>
+      <div class="z-10" aria-live="polite">
+        <span v-show="error" id="error-message" class="error-message">{{
+          errorMessage
+        }}</span>
+      </div>
       <button class="btn form-btn">Shorten It!</button>
     </form>
   </div>
 </template>
 
 <script>
-import Results from "./Results.vue";
-
 export default {
-  components: {
-    Results
-  },
   props: ["handleSubmit", "error", "errorMessage"],
   data() {
     return {

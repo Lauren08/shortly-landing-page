@@ -21,7 +21,6 @@
       :aria-expanded="expanded ? 'true' : 'false'"
       role="button"
       @click="handleMenu"
-      @keyup.space="handleMenu"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
         <title id="header-menu">Open Menu</title>
@@ -43,7 +42,9 @@
           <a class="nav-item" href="#">Resources</a>
         </li>
         <li aria-hidden="true">
-          <hr class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet" />
+          <hr
+            class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet"
+          />
         </li>
         <li>
           <a class="nav-item" href="#">Login</a>

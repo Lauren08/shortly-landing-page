@@ -2,7 +2,7 @@
   <main class="flex flex-col">
     <Landing />
     <Form :handleSubmit="handleSubmit" :error="error" :errorMessage="errorMessage" />
-    <Branding />
+    <Content :links="links" />
     <Cta />
   </main>
 </template>
@@ -10,14 +10,14 @@
 <script>
 import Landing from "./Landing.vue";
 import Form from "./Form.vue";
-import Branding from "./Branding.vue";
+import Content from "./Content.vue";
 import Cta from "./Cta.vue";
 
 export default {
   components: {
     Landing,
     Form,
-    Branding,
+    Content,
     Cta
   },
   data() {
