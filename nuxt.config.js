@@ -23,7 +23,7 @@ export default {
   loading: { color: "#2ACFCF" },
   css: [],
   plugins: [],
-  buildModules: ["@nuxtjs/eslint-module", "@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxtjs/tailwindcss"],
   modules: ["@nuxtjs/pwa"],
   pwa: {
     icons: {
