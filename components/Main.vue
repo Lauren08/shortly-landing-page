@@ -57,7 +57,10 @@ export default {
           return resp.json();
         })
         .then(data => this.links.push(data))
-        .catch(err => console.error(err));
+        .catch(err => {
+          this.$sentry.captureException(err);
+          console.error(err);
+        });
     }
   }
 };

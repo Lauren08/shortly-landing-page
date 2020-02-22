@@ -24,7 +24,13 @@ export default {
   css: [],
   plugins: [],
   buildModules: ["@nuxtjs/tailwindcss"],
-  modules: ["@nuxtjs/pwa"],
+  modules: ["@nuxtjs/sentry", "@nuxtjs/pwa"],
+  sentry: {
+    dsn: "https://235750b25c4c4e5da45c6e144a111eb5@sentry.io/2766050",
+    publishRelease: true,
+    attachCommits: true,
+    repo: "https://github.com/Asjas/shortly-landing-page"
+  },
   pwa: {
     icons: {
       iconSrc: "favicon.png"
