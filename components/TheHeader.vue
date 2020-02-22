@@ -23,7 +23,7 @@
       @click="handleMenu"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-        <title id="header-menu">Open Menu</title>
+        <title id="header-menu">Menu</title>
         <path
           fill="currentColor"
           d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z"
@@ -42,9 +42,7 @@
           <a class="nav-item" href="#">Resources</a>
         </li>
         <li aria-hidden="true">
-          <hr
-            class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet"
-          />
+          <hr class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet" />
         </li>
         <li>
           <a class="nav-item" href="#">Login</a>
