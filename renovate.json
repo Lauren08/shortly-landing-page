@@ -7,10 +7,6 @@
     {
       "packagePatterns": ["vue"],
       "groupName": "vuejs"
-    },
-    {
-      "packagePatterns": ["eslint"],
-      "groupName": "eslint"
     }
   ],
   "automerge": true,
