@@ -20,8 +20,10 @@ module.exports = {
       body: ["Poppins", "sans-serif"]
     },
     screens: {
-      mobile: "375px",
-      desktop: "1440px"
+      sm: "375px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1440px"
     },
     fontSize: {
       micro: ".666rem",

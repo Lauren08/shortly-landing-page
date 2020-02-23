@@ -1,6 +1,9 @@
 <template>
   <div>
-    <form class="form" @submit.prevent="handleSubmit(link)">
+    <form
+      class="flex flex-col md:w-10/12 md:mx-auto mt-16 mx-5 p-5 relative rounded-lg bg-darkvoilet"
+      @submit.prevent="handleSubmit(link)"
+    >
       <svg
         class="absolute top-0 right-0 rounded-tr-lg"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,9 +29,11 @@
         placeholder="Shorten a link here..."
       />
       <div class="z-10" aria-live="polite">
-        <span v-show="error" id="error-message" class="error-message">{{
+        <span v-show="error" id="error-message" class="error-message">
+          {{
           errorMessage
-        }}</span>
+          }}
+        </span>
       </div>
       <button class="btn form-btn">Shorten It!</button>
     </form>
@@ -47,10 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.form {
-  @apply flex flex-col mt-16 mx-5 p-5 relative rounded-lg bg-darkvoilet;
-}
-
 .form-input {
   @apply w-full h-12 mt-1 pl-3 border-0 rounded-md outline-none text-neutral-gray leading-3xl font-semibold text-small z-10;
 }
