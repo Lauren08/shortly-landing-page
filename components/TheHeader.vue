@@ -53,7 +53,7 @@
           <a class="nav-item" href="#">Login</a>
         </li>
         <li class="my-4">
-          <button class="btn nav-btn">Sign Up</button>
+          <Button class="w-full max-w-sm h-12 rounded-full">Sign Up</Button>
         </li>
       </ul>
     </nav>
@@ -75,7 +75,7 @@
           <a class="text-neutral-grayishvoilet text-tiny font-bold" href="#">Login</a>
         </li>
         <li>
-          <button class="btn desktop-btn">Sign Up</button>
+          <Button class="h-10 w-24 rounded-full text-tiny">Sign Up</Button>
         </li>
       </ul>
     </nav>
@@ -83,7 +83,12 @@
 </template>
 
 <script>
+import Button from "./Button";
+
 export default {
+  components: {
+    Button
+  },
   data() {
     return {
       expanded: false
@@ -108,13 +113,5 @@ export default {
 
 .nav-item:focus {
   @apply shadow-outline;
-}
-
-.nav-btn {
-  @apply w-full max-w-sm h-12;
-}
-
-.desktop-btn {
-  @apply h-10 w-24 rounded-full text-tiny;
 }
 </style>

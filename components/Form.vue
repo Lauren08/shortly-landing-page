@@ -19,29 +19,38 @@
       <label id="form-input" class="sr-only">Enter a url</label>
       <input
         v-model.trim="link"
-        class="form-input"
+        class="w-full h-12 mt-1 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline placeholder-opacity-50 text-neutral-gray leading-3xl font-semibold text-small z-10"
         id="form-input"
         aria-describedby="error-message"
         aria-required="true"
         :aria-invalid="error"
-        :class="{ 'input-error': error }"
+        :class="{ 'border-3 placeholder-secondary-red border-secondary-red': error }"
         type="text"
         placeholder="Shorten a link here..."
       />
       <div class="z-10" aria-live="polite">
-        <span v-show="error" id="error-message" class="error-message">
+        <span
+          v-show="error"
+          id="error-message"
+          class="pt-1 italic text-secondary-red text-micro font-semibold z-10"
+        >
           {{
           errorMessage
           }}
         </span>
       </div>
-      <button class="btn form-btn">Shorten It!</button>
+      <Button class="w-full h-12 mt-4 rounded-lg z-10">Shorten It!</Button>
     </form>
   </div>
 </template>
 
 <script>
+import Button from "./Button";
+
 export default {
+  components: {
+    Button
+  },
   props: ["handleSubmit", "error", "errorMessage"],
   data() {
     return {
@@ -50,29 +59,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.form-input {
-  @apply w-full h-12 mt-1 pl-3 border-0 rounded-md outline-none text-neutral-gray leading-3xl font-semibold text-small z-10;
-}
-
-.form-input.input-error {
-  @apply border-3 border-secondary-red;
-}
-
-.form-input.input-error::placeholder {
-  @apply opacity-50 text-secondary-red;
-}
-
-.form-input:focus {
-  @apply outline-none shadow-outline;
-}
-
-.error-message {
-  @apply pt-1 italic text-secondary-red text-micro font-semibold z-10;
-}
-
-.form-btn {
-  @apply w-full h-12 mt-4 rounded-md z-10;
-}
-</style>

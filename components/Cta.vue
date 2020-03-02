@@ -12,13 +12,17 @@
         />
       </g>
     </svg>
-    <h4 class="z-10 text-2xl leading-4xl self-center text-white font-bold">
-      Boost your links today
-    </h4>
-    <button
-      class="z-10 h-14 w-48 mt-4 self-center border-0 bg-cyan rounded-full outline-none focus:outline-none focus:shadow-outline text-white text-lg font-bold"
-    >
-      Get Started
-    </button>
+    <h4 class="z-10 text-2xl leading-4xl self-center text-white font-bold">Boost your links today</h4>
+    <Button class="mt-4 z-10 rounded-full text-lg">Get Started</Button>
   </div>
 </template>
+
+<script>
+import Button from "./Button";
+
+export default {
+  components: {
+    Button
+  }
+};
+</script>

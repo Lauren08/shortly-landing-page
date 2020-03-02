@@ -291,6 +291,16 @@
       Build your brand's recognition and get detailed insights on how your links
       are performing.
     </p>
-    <button class="btn mt-8 mb-4">Get Started</button>
+    <Button class="mt-8 mb-4 rounded-full">Get Started</Button>
   </div>
 </template>
+
+<script>
+import Button from "./Button";
+
+export default {
+  components: {
+    Button
+  }
+};
+</script>
