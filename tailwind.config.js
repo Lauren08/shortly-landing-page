@@ -15,7 +15,9 @@ module.exports = {
           verydarkvoilet: "#232127"
         }
       },
-      spacing: {},
+      spacing: {
+        "70": "17rem"
+      },
       borderWidth: {
         "3": "3px"
       }
