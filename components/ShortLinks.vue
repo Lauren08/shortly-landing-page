@@ -1,19 +1,26 @@
 <template>
-  <div class="link-container">
-    <p class="link">{{ link.url }}</p>
-    <hr class="horizontal-line" />
-    <p class="short-link">{{ `https://rel.ink/${link.hashid}` }}</p>
-    <button
-      class="btn link-btn"
-      :class="{ 'link-btn__copied': copied }"
+  <div
+    class="flex flex-col self-center w-11/12 mt-6 shadow-sm rounded-md bg-white text-small leading-3xl font-medium"
+  >
+    <p class="px-4 py-1">{{ link.url }}</p>
+    <hr class="text-neutral-gray opacity-25" />
+    <p class="px-4 py-1 text-cyan">{{ `https://rel.ink/${link.hashid}` }}</p>
+    <Button
+      class="w-11/12 h-10 mb-4 rounded-md text-small"
+      :class="{ 'bg-darkvoilet': copied }"
       @click="handleClick(`https://rel.ink/${link.hashid}`)"
-    >{{ copied ? "Copied!" : "Copy" }}</button>
+    >{{ copied ? "Copied!" : "Copy" }}</Button>
   </div>
 </template>
 
 <script>
+import Button from "./Button";
+
 export default {
   props: ["link"],
+  components: {
+    Button
+  },
   data() {
     return {
       copied: false
@@ -35,29 +42,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.link-container {
-  @apply flex flex-col self-center w-11/12 mt-6 shadow-sm rounded-md bg-white text-small leading-3xl font-semibold;
-}
-
-.link {
-  @apply px-4 py-1;
-}
-
-.horizontal-line {
-  @apply text-neutral-gray opacity-25;
-}
-
-.short-link {
-  @apply px-4 py-1 text-cyan;
-}
-
-.link-btn {
-  @apply w-11/12 h-10 mb-4 rounded-md text-small;
-}
-
-.link-btn__copied {
-  @apply bg-darkvoilet;
-}
-</style>

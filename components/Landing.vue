@@ -287,11 +287,11 @@
     <h1
       class="w-11/12 mt-5 py-2 mx-auto text-4xl leading-4xl text-center font-bold"
     >More than just shorter links</h1>
-    <p class="w-11/12 mx-auto leading-2xl text-center text-neutral-grayishvoilet font-semibold">
+    <p class="w-11/12 mx-auto leading-2xl text-center text-neutral-grayishvoilet font-medium">
       Build your brand's recognition and get detailed insights on how your links
       are performing.
     </p>
-    <Button class="mt-8 mb-4 rounded-full">Get Started</Button>
+    <Button class="h-12 mt-8 mb-4 rounded-full">Get Started</Button>
   </div>
 </template>
 

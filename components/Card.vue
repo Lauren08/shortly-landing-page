@@ -10,7 +10,7 @@
     </div>
     <h3 class="mt-8 mb-4 self-center text-xl font-bold">{{ card.heading }}</h3>
     <p
-      class="self-center leading-xl text-center text-neutral-gray text-tiny font-semibold"
+      class="self-center leading-xl text-center text-neutral-gray text-tiny font-medium"
     >{{ card.content }}</p>
   </div>
 </template>

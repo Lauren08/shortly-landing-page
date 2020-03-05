@@ -19,12 +19,12 @@
       <label id="form-input" class="sr-only">Enter a url</label>
       <input
         v-model.trim="link"
-        class="w-full h-12 mt-1 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline placeholder-opacity-50 text-neutral-gray leading-3xl font-semibold text-small z-10"
+        class="w-full h-12 mt-1 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline text-neutral-gray leading-3xl font-medium text-small z-10"
         id="form-input"
         aria-describedby="error-message"
         aria-required="true"
         :aria-invalid="error"
-        :class="{ 'border-3 placeholder-secondary-red border-secondary-red': error }"
+        :class="{ 'border-3 placeholder-opacity-50 placeholder-secondary-red border-secondary-red': error }"
         type="text"
         placeholder="Shorten a link here..."
       />
@@ -32,7 +32,7 @@
         <span
           v-show="error"
           id="error-message"
-          class="pt-1 italic text-secondary-red text-micro font-semibold z-10"
+          class="pt-1 italic text-secondary-red text-micro font-medium z-10"
         >
           {{
           errorMessage

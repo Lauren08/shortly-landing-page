@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col justify-center relative h-60 w-full bg-darkvoilet">
+  <div class="flex flex-col justify-center relative h-70 w-full bg-darkvoilet">
     <svg
       class="absolute top-0 right-0"
       xmlns="http://www.w3.org/2000/svg"
       width="375"
-      height="300"
+      height="306"
     >
       <g fill="#4B3F6B" fill-rule="evenodd">
         <path
@@ -13,7 +13,7 @@
       </g>
     </svg>
     <h4 class="z-10 text-2xl leading-4xl self-center text-white font-bold">Boost your links today</h4>
-    <Button class="mt-4 z-10 rounded-full text-lg">Get Started</Button>
+    <Button class="h-12 mt-4 z-10 rounded-full text-lg">Get Started</Button>
   </div>
 </template>
 

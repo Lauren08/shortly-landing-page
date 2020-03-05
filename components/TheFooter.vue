@@ -111,7 +111,7 @@ h5 {
 }
 
 a {
-  @apply leading-xl text-neutral-gray text-tiny font-semibold;
+  @apply leading-xl text-neutral-gray text-tiny font-medium;
 }
 
 a:hover {
