@@ -29,7 +29,6 @@ export default {
     dsn: "https://235750b25c4c4e5da45c6e144a111eb5@sentry.io/2766050",
     publishRelease: true,
     attachCommits: true,
-    org: "asjas",
     repo: "https://github.com/Asjas/shortly-landing-page"
   },
   pwa: {
