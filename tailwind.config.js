@@ -28,7 +28,8 @@ module.exports = {
     },
     screens: {
       sm: "375px",
-      xl: "1440px"
+      md: "768px",
+      lg: "1440px"
     },
     fontSize: {
       micro: ".666rem",
@@ -47,5 +48,8 @@ module.exports = {
       "3xl": "2rem",
       "4xl": "2.66rem"
     }
+  },
+  variants: {
+    boxShadow: ["responsive", "focus", "active", "focus-within"]
   }
 };
