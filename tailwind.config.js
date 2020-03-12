@@ -3,6 +3,7 @@ module.exports = {
     extend: {
       colors: {
         cyan: "#2ACFCF",
+        lightCyan: "#9AE3E3",
         darkvoilet: "#3B3054",
         secondary: {
           red: "#F46262"
@@ -16,7 +17,8 @@ module.exports = {
         }
       },
       spacing: {
-        "70": "17rem"
+        36: "9rem",
+        70: "17rem"
       },
       borderWidth: {
         "3": "3px"
@@ -29,7 +31,8 @@ module.exports = {
     screens: {
       sm: "375px",
       md: "768px",
-      lg: "1440px"
+      lg: "1110px",
+      xl: "1440px"
     },
     fontSize: {
       micro: ".666rem",

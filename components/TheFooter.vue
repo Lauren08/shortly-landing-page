@@ -1,7 +1,7 @@
 <template>
-  <footer class="flex max-w-full md:justify-center py-10 bg-neutral-verydarkvoilet">
+  <footer class="flex max-w-full md:justify-center py-10 md:py-16 bg-neutral-verydarkvoilet">
     <div
-      class="flex flex-col md:flex-row md:justify-between w-full md:w-9/12 text-center md:text-left items-center md:items-start"
+      class="flex flex-col md:flex-row md:justify-between w-full md:max-w-screen-lg md:w-9/12 md:h-36 text-center md:text-left items-center md:items-start"
     >
       <svg
         class="mb-12 md:mb-0 md:mt-1"
@@ -22,19 +22,19 @@
             <li>
               <h5 class="mb-4 leading-2xl text-small font-bold">Features</h5>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Link Shortening</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Branded Links</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
@@ -45,19 +45,19 @@
             <li>
               <h5 class="mb-4 leading-2xl text-small font-bold">Resources</h5>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Blog</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Developers</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
@@ -68,25 +68,25 @@
             <li>
               <h5 class="mb-4 leading-2xl text-small font-bold">Company</h5>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >About</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Our Team</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"
               >Careers</a>
             </li>
-            <li>
+            <li class="md:mt-1">
               <a
                 class="text-neutral-gray text-tiny font-medium hover:text-cyan focus:outline-none focus:shadow-outline"
                 href="#"

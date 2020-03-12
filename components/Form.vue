@@ -1,7 +1,7 @@
 <template>
   <div>
     <form
-      class="flex flex-col md:w-10/12 md:mx-auto mt-16 mx-5 p-5 relative rounded-lg bg-darkvoilet"
+      class="flex flex-col md:w-10/12 md:mx-auto md:max-w-screen-lg mt-16 mx-5 p-5 relative rounded-lg bg-darkvoilet"
       @submit.prevent="handleSubmit(link)"
     >
       <svg
