@@ -1,23 +1,27 @@
 <template>
   <main class="flex flex-col">
-    <Landing />
-    <Form :handleSubmit="handleSubmit" :error="error" :errorMessage="errorMessage" />
-    <Content :links="links" />
+    <Hero />
+    <Form
+      :handleSubmit="handleSubmit"
+      :error="error"
+      :errorMessage="errorMessage"
+    />
+    <Features :links="links" />
     <Cta />
   </main>
 </template>
 
 <script>
-import Landing from "./Landing.vue";
+import Hero from "./Hero.vue";
 import Form from "./Form.vue";
-import Content from "./Content.vue";
+import Features from "./Features.vue";
 import Cta from "./Cta.vue";
 
 export default {
   components: {
-    Landing,
+    Hero,
     Form,
-    Content,
+    Features,
     Cta
   },
   data() {

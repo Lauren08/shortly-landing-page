@@ -4,7 +4,9 @@
       <ShortLinks :link="link" />
     </section>
     <section class="pt-20">
-      <h2 class="w-11/12 mx-auto text-2xl leading-2xl font-bold text-center">Advanced Statistics</h2>
+      <h2 class="w-11/12 mx-auto text-2xl leading-2xl font-bold text-center">
+        Advanced Statistics
+      </h2>
       <p
         class="w-11/12 mt-2 pt-2 mx-auto px-1 leading-2xl text-center text-neutral-grayishvoilet text-small font-medium"
       >

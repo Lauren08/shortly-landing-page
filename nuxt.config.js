@@ -1,7 +1,7 @@
 export default {
   mode: "universal",
   head: {
-    title: "Shortly",
+    title: "Shortly Landing Page",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
