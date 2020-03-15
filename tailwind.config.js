@@ -17,8 +17,11 @@ module.exports = {
         }
       },
       spacing: {
+        14: "3.75rem",
+        18: "4.5rem",
         36: "9rem",
-        70: "17rem"
+        70: "17rem",
+        90: "26.7rem"
       },
       borderWidth: {
         "3": "3px"
@@ -43,13 +46,15 @@ module.exports = {
       xl: "1.22rem",
       "2xl": "1.55rem",
       "3xl": "1.77rem",
-      "4xl": "2.33rem"
+      "4xl": "2.33rem",
+      "5xl": "4.45rem"
     },
     lineHeight: {
       xl: "1.44rem",
       "2xl": "1.66rem",
       "3xl": "2rem",
-      "4xl": "2.66rem"
+      "4xl": "2.66rem",
+      "5xl": "5rem"
     }
   },
   variants: {

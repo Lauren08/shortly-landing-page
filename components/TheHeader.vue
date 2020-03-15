@@ -1,9 +1,9 @@
 <template>
   <header
-    class="md:w-11/12 mx-auto flex items-center md:items-start justify-between md:justify-start pt-10"
+    class="md:w-11/12 md:max-w-screen-lg mx-auto flex items-center md:items-start justify-between pt-10"
   >
     <svg
-      class="ml-6 self-center"
+      class="ml-6 md:ml-0 self-center"
       aria-labelledby="header-logo"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
@@ -34,60 +34,19 @@
       </svg>
     </a>
     <!-- #endregion -->
-    <!-- #region mobile nav -->
-    <nav v-if="expanded" class="mobile-nav md:hidden">
-      <ul class="list-none p-5">
-        <li>
-          <a class="nav-item" href="#">Features</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Pricing</a>
-        </li>
-        <li>
-          <a class="nav-item" href="#">Resources</a>
-        </li>
-        <li aria-hidden="true">
-          <hr class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet" />
-        </li>
-        <li>
-          <a class="nav-item" href="#">Login</a>
-        </li>
-        <li class="my-4">
-          <Button class="w-full max-w-sm h-12 rounded-full">Sign Up</Button>
-        </li>
-      </ul>
-    </nav>
-    <!-- #endregion -->
-    <nav class="hidden md:flex md:w-full">
-      <ul class="list-none flex w-full justify-between items-center">
-        <ul class="flex w-full list-none">
-          <li>
-            <a class="text-neutral-grayishvoilet text-tiny font-bold" href="#">Features</a>
-          </li>
-          <li>
-            <a class="text-neutral-grayishvoilet text-tiny font-bold" href="#">Pricing</a>
-          </li>
-          <li>
-            <a class="text-neutral-grayishvoilet text-tiny font-bold" href="#">Resources</a>
-          </li>
-        </ul>
-        <li>
-          <a class="text-neutral-grayishvoilet text-tiny font-bold" href="#">Login</a>
-        </li>
-        <li>
-          <Button class="h-10 w-24 rounded-full text-tiny">Sign Up</Button>
-        </li>
-      </ul>
-    </nav>
+    <MobileNav :expanded="expanded" />
+    <DesktopNav />
   </header>
 </template>
 
 <script>
-import Button from "./Button";
+import MobileNav from "./MobileNav";
+import DesktopNav from "./DesktopNav";
 
 export default {
   components: {
-    Button
+    MobileNav,
+    DesktopNav
   },
   data() {
     return {
@@ -101,17 +60,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.mobile-nav {
-  @apply absolute w-11/12 max-w-sm block left-0 right-0 top-0 mt-24 mx-auto bg-darkvoilet rounded-lg text-center;
-}
-
-.nav-item {
-  @apply block no-underline mx-2 py-3 text-white font-semibold;
-}
-
-.nav-item:focus {
-  @apply shadow-outline;
-}
-</style>

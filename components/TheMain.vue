@@ -1,12 +1,8 @@
 <template>
   <main class="flex flex-col">
     <Hero />
-    <Form
-      :handleSubmit="handleSubmit"
-      :error="error"
-      :errorMessage="errorMessage"
-    />
-    <Features :links="links" />
+    <Form :handleSubmit="handleSubmit" :error="error" :errorMessage="errorMessage" />
+    <Content :links="links" />
     <Cta />
   </main>
 </template>
@@ -14,14 +10,14 @@
 <script>
 import Hero from "./Hero.vue";
 import Form from "./Form.vue";
-import Features from "./Features.vue";
+import Content from "./Content.vue";
 import Cta from "./Cta.vue";
 
 export default {
   components: {
     Hero,
     Form,
-    Features,
+    Content,
     Cta
   },
   data() {
