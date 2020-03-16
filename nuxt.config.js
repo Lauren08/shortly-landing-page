@@ -22,7 +22,7 @@ export default {
   },
   loading: { color: "#2ACFCF" },
   css: [],
-  plugins: [],
+  plugins: [{ src: "~/plugins/vue-session", mode: "client" }],
   buildModules: ["@nuxtjs/tailwindcss"],
   modules: ["@nuxtjs/sentry", "@nuxtjs/pwa"],
   sentry: {

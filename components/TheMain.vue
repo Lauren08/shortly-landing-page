@@ -1,7 +1,11 @@
 <template>
   <main class="flex flex-col">
     <Hero />
-    <Form :handleSubmit="handleSubmit" :error="error" :errorMessage="errorMessage" />
+    <Form
+      :handleSubmit="handleSubmit"
+      :error="error"
+      :errorMessage="errorMessage"
+    />
     <Content :links="links" />
     <Cta />
   </main>
@@ -26,6 +30,19 @@ export default {
       error: false,
       errorMessage: ""
     };
+  },
+  mounted: function() {
+    this.$nextTick(function() {
+      const linksStoredInSession = this.$session.getAll();
+      let links;
+      if (linksStoredInSession) {
+        links = Object.entries(linksStoredInSession).filter(
+          link => link[0] !== "session-id"
+        );
+      }
+
+      links.map(link => this.loadLinkFromSession(link));
+    });
   },
   methods: {
     handleSubmit(link) {
@@ -56,11 +73,29 @@ export default {
 
           return resp.json();
         })
-        .then(data => this.links.push(data))
+        .then(data => {
+          this.$session.set(data.url, {
+            hashid: data.hashid,
+            created_at: data.created_at
+          });
+          this.links.push(data);
+
+          return;
+        })
         .catch(err => {
           this.$sentry.captureException(err);
           console.error(err);
         });
+    },
+    loadLinkFromSession(link) {
+      const data = {
+        url: link[0],
+        hashid: link[1].hashid,
+        created_at: link[1].created_at
+      };
+
+      this.links.push(data);
+      return;
     }
   }
 };
