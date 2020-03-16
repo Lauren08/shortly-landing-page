@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col justify-center relative h-70 md:h-56 w-full bg-darkvoilet"
-  >
+  <div class="flex flex-col justify-center relative h-70 md:h-56 w-full bg-darkvoilet">
     <svg
       class="absolute top-0 right-0 md:hidden"
       xmlns="http://www.w3.org/2000/svg"
@@ -25,10 +23,8 @@
       </g>
     </svg>
     <h4
-      class="z-10 text-2xl leading-4xl tracking-tighter self-center text-white font-bold"
-    >
-      Boost your links today
-    </h4>
+      class="z-10 self-center text-2xl lg:text-4xl leading-4xl tracking-tighter text-white font-bold"
+    >Boost your links today</h4>
     <button class="btn cta-btn">Get Started</button>
   </div>
 </template>
@@ -36,5 +32,11 @@
 <style scoped>
 .cta-btn {
   @apply h-12 mt-4 z-10 rounded-full text-lg;
+}
+
+@screen lg {
+  .cta-btn {
+    @apply mt-6;
+  }
 }
 </style>
