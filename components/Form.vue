@@ -28,10 +28,8 @@
         />
       </svg>
       <!-- #endregion -->
-      <div
-        class="md:flex md:flex-col w-full md:ml-2 lg:ml-8 md:items-center z-10"
-      >
-        <label id="form-input" class="sr-only">Enter a url</label>
+      <div class="md:flex md:flex-col w-full md:ml-2 lg:ml-8 md:items-center z-10">
+        <label for="form-input" class="sr-only">Enter a url</label>
         <input
           class="w-full h-12 md:h-14 mt-1 md:mt-0 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline text-neutral-verydarkblue text-small md:text-lg leading-3xl font-medium tracking-wide"
           :class="{
@@ -45,16 +43,12 @@
           placeholder="Shorten a link here..."
           v-model.trim="link"
         />
-        <div
-          class="md:absolute md:bottom-0 md:left-0 md:ml-14 md:mb-5"
-          aria-live="polite"
-        >
+        <div class="md:absolute md:bottom-0 md:left-0 md:ml-14 md:mb-5" aria-live="polite">
           <span
             class="pt-1 italic text-secondary-red text-micro font-medium tracking-wide"
             v-show="error"
             id="error-message"
-            >{{ errorMessage }}</span
-          >
+          >{{ errorMessage }}</span>
         </div>
       </div>
       <button class="btn form-btn">Shorten It!</button>
