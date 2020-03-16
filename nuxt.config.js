@@ -8,7 +8,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "The Shortly Landing Page project from frontendmentor.io"
       }
     ],
     link: [
