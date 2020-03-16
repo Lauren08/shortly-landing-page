@@ -1,50 +1,28 @@
 <template>
   <section class="pt-20">
-    <h2 class="w-11/12 mx-auto text-2xl leading-2xl font-bold text-center">Advanced Statistics</h2>
-    <p
-      class="w-11/12 mt-2 pt-2 mx-auto px-1 leading-2xl text-center text-neutral-grayishvoilet text-small font-medium"
-    >
-      Track how your links are performing across the web with our advanced
-      statistics dashboard.
-    </p>
-    <div class="flex mb-24 justify-center">
-      <div class="h-full w-2 mt-20 bg-cyan absolute"></div>
-      <div class="flex flex-col relative">
-        <div v-for="card in cards" :key="card.heading">
-          <Card :card="card" />
-        </div>
-      </div>
+    <div class="w-full md:w-3/5 lg:w-2/5 mx-auto">
+      <h2
+        class="w-11/12 lg:w-full mx-auto text-neutral-verydarkblue text-2xl lg:text-4xl leading-2xl lg:leading-4xl tracking-tighter font-bold text-center"
+      >
+        Advanced Statistics
+      </h2>
+      <p
+        class="w-11/12 lg:w-full mt-2 pt-2 mx-auto px-1 text-neutral-grayishvoilet text-small lg:text-base lg:leading-2xl leading-2xl tracking-wide text-center font-medium"
+      >
+        Track how your links are performing across the web with our advanced
+        statistics dashboard.
+      </p>
     </div>
+    <Cards />
   </section>
 </template>
 
 <script>
-import Card from "./Card";
+import Cards from "./Cards";
 
 export default {
   components: {
-    Card
-  },
-  data() {
-    return {
-      cards: [
-        {
-          heading: "Brand Recognition",
-          content:
-            "Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content."
-        },
-        {
-          heading: "Detailed Records",
-          content:
-            "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
-        },
-        {
-          heading: "Fully Customizable",
-          content:
-            "Improve brand awareness and content discoverabilty through customizable links, supercharging audience engagement."
-        }
-      ]
-    };
+    Cards
   }
 };
 </script>

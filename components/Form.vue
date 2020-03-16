@@ -1,7 +1,7 @@
 <template>
   <div>
     <form
-      class="md:relative flex flex-col md:flex-row md:w-10/12 md:max-w-screen-lg md:h-36 mt-16 mx-5 md:mx-auto p-5 relative items-center rounded-lg bg-darkvoilet"
+      class="relative flex flex-col md:flex-row md:w-10/12 md:max-w-screen-lg md:h-36 mt-16 mx-5 md:mx-auto p-5 items-center rounded-lg bg-darkvoilet"
       @submit.prevent="handleSubmit(link)"
     >
       <!-- #region form svg backgrounds -->
@@ -28,11 +28,15 @@
         />
       </svg>
       <!-- #endregion -->
-      <div class="md:flex md:flex-col w-full md:ml-2 lg:ml-8 md:items-center z-10">
+      <div
+        class="md:flex md:flex-col w-full md:ml-2 lg:ml-8 md:items-center z-10"
+      >
         <label id="form-input" class="sr-only">Enter a url</label>
         <input
-          class="w-full h-12 md:h-14 mt-1 md:mt-0 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline text-neutral-gray leading-3xl font-medium text-small md:text-lg"
-          :class="{ 'border-3 placeholder-opacity-50 placeholder-secondary-red border-secondary-red': error }"
+          class="w-full h-12 md:h-14 mt-1 md:mt-0 pl-3 border-0 rounded-md outline-none focus:outline-none focus:shadow-outline text-neutral-verydarkblue text-small md:text-lg leading-3xl font-medium tracking-wide"
+          :class="{
+            'border-3 placeholder-opacity-50 placeholder-secondary-red border-secondary-red': error
+          }"
           id="form-input"
           aria-describedby="error-message"
           aria-required="true"
@@ -41,12 +45,16 @@
           placeholder="Shorten a link here..."
           v-model.trim="link"
         />
-        <div class="md:absolute md:bottom-0 md:left-0 md:ml-14 md:mb-5" aria-live="polite">
+        <div
+          class="md:absolute md:bottom-0 md:left-0 md:ml-14 md:mb-5"
+          aria-live="polite"
+        >
           <span
-            class="pt-1 italic text-secondary-red text-micro font-medium"
+            class="pt-1 italic text-secondary-red text-micro font-medium tracking-wide"
             v-show="error"
             id="error-message"
-          >{{ errorMessage }}</span>
+            >{{ errorMessage }}</span
+          >
         </div>
       </div>
       <button class="btn form-btn">Shorten It!</button>

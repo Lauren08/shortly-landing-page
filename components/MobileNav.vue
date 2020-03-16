@@ -1,35 +1,41 @@
 <template>
   <nav
     v-if="expanded"
-    class="absolute md:hidden w-11/12 max-w-sm block left-0 right-0 top-0 mt-24 mx-auto bg-darkvoilet rounded-lg text-center"
+    class="md:hidden absolute block left-0 right-0 top-0 w-11/12 max-w-sm mt-24 mx-auto rounded-lg bg-darkvoilet text-center"
   >
     <ul class="list-none p-5">
       <li>
         <a
-          class="block no-underline mx-2 py-3 focus:outline-none focus:shadow-outline text-white font-semibold"
+          class="block no-underline mx-2 py-3 text-white font-bold focus:outline-none focus:shadow-outline"
           href="#"
-        >Features</a>
+          >Features</a
+        >
       </li>
       <li>
         <a
-          class="block no-underline mx-2 py-3 focus:outline-none focus:shadow-outline text-white font-semibold"
+          class="block no-underline mx-2 py-3 text-white font-bold focus:outline-none focus:shadow-outline"
           href="#"
-        >Pricing</a>
+          >Pricing</a
+        >
       </li>
       <li>
         <a
-          class="block no-underline mx-2 py-3 focus:outline-none focus:shadow-outline text-white font-semibold"
+          class="block no-underline mx-2 py-3 text-white font-bold focus:outline-none focus:shadow-outline"
           href="#"
-        >Resources</a>
+          >Resources</a
+        >
       </li>
       <li aria-hidden="true">
-        <hr class="mx-auto my-3 w-11/12 opacity-25 border-neutral-grayishvoilet" />
+        <hr
+          class="w-11/12 opacity-25 mx-auto my-3 border-neutral-grayishvoilet"
+        />
       </li>
       <li>
         <a
-          class="block no-underline mx-2 py-3 focus:outline-none focus:shadow-outline text-white font-semibold"
+          class="block no-underline mx-2 py-3 text-white font-bold focus:outline-none focus:shadow-outline"
           href="#"
-        >Login</a>
+          >Login</a
+        >
       </li>
       <li class="my-4">
         <button class="btn nav-btn">Sign Up</button>

@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col justify-center relative h-70 md:h-56 w-full bg-darkvoilet">
+  <div
+    class="flex flex-col justify-center relative h-70 md:h-56 w-full bg-darkvoilet"
+  >
     <svg
       class="absolute top-0 right-0 md:hidden"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,7 +15,7 @@
       </g>
     </svg>
     <svg
-      class="absolute top-0 right-0 w-full h-56 sm:hidden md:block"
+      class="absolute top-0 right-0 w-full h-56 hidden md:block"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g fill="#4B3F6B" fill-rule="evenodd">
@@ -22,7 +24,11 @@
         />
       </g>
     </svg>
-    <h4 class="z-10 text-2xl leading-4xl self-center text-white font-bold">Boost your links today</h4>
+    <h4
+      class="z-10 text-2xl leading-4xl tracking-tighter self-center text-white font-bold"
+    >
+      Boost your links today
+    </h4>
     <button class="btn cta-btn">Get Started</button>
   </div>
 </template>
