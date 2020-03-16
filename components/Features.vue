@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-20">
+  <section class="mt-32">
     <div class="w-full md:w-3/5 lg:w-2/5 mx-auto">
       <h2
         class="w-11/12 mx-auto text-neutral-verydarkblue text-2xl lg:text-4xl leading-2xl lg:leading-4xl tracking-tighter font-bold text-center"

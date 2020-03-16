@@ -1,7 +1,7 @@
 <template>
   <div>
     <form
-      class="relative flex flex-col md:flex-row md:w-10/12 md:max-w-screen-lg md:h-36 mt-16 mx-5 md:mx-auto p-5 items-center rounded-lg bg-darkvoilet"
+      class="relative flex flex-col md:flex-row md:w-10/12 md:max-w-screen-lg md:h-36 mt-16 lg:mt-24 mx-5 md:mx-auto p-5 items-center rounded-lg bg-darkvoilet"
       @submit.prevent="handleSubmit(link)"
     >
       <!-- #region form svg backgrounds -->
