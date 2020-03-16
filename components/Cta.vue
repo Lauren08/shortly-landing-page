@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center relative h-70 md:h-56 w-full bg-darkvoilet">
+  <div class="relative flex flex-col justify-center w-full h-70 md:h-56 bg-darkvoilet">
     <svg
       class="absolute top-0 right-0 md:hidden"
       xmlns="http://www.w3.org/2000/svg"

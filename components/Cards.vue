@@ -1,14 +1,14 @@
 <template>
   <div
-    class="relative flex flex-col lg:flex-row justify-center lg:items-center lg:max-w-screen-lg h-full lg:h-80 mb-24 lg:mt-12 lg:mx-auto"
+    class="relative flex flex-col lg:flex-row justify-center lg:items-center lg:max-w-screen-lg h-full lg:h-80 mb-24 lg:mb-32 lg:mt-16 lg:mx-auto"
   >
     <div class="absolute self-center h-90 w-2 lg:w-8/12 lg:h-2 lg:mt-0 bg-cyan"></div>
     <div class="flex lg:self-start">
       <div
-        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:w-10/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
+        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
       >
         <div
-          class="absolute top-0 -mt-12 lg:ml-2 p-6 lg:p-5 self-center lg:self-start rounded-full bg-darkvoilet"
+          class="absolute top-0 -mt-12 lg:ml-3 p-6 lg:p-5 self-center lg:self-start rounded-full bg-darkvoilet"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
             <path
@@ -18,10 +18,10 @@
           </svg>
         </div>
         <h3
-          class="mt-8 mb-4 lg:mt-6 lg:ml-2 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
+          class="mt-8 mb-4 lg:mt-6 lg:ml-3 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
         >Brand Recognition</h3>
         <p
-          class="self-center lg:self-start lg:ml-2 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
+          class="self-center lg:self-start lg:mx-3 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
         >
           Boost your brand recognition with each click. Generic links don't mean
           a thing. Branded links help instil confidence in your content.
@@ -30,10 +30,10 @@
     </div>
     <div class="flex">
       <div
-        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:w-10/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
+        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
       >
         <div
-          class="absolute top-0 -mt-12 lg:ml-2 p-6 lg:p-5 self-center lg:self-start rounded-full bg-darkvoilet"
+          class="absolute top-0 -mt-12 lg:ml-3 p-6 lg:p-5 self-center lg:self-start rounded-full bg-darkvoilet"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
             <path
@@ -43,10 +43,10 @@
           </svg>
         </div>
         <h3
-          class="mt-8 mb-4 lg:mt-6 lg:ml-2 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
+          class="mt-8 mb-4 lg:mt-6 lg:ml-3 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
         >Detailed Records</h3>
         <p
-          class="self-center lg:self-start lg:ml-2 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
+          class="self-center lg:self-start lg:mx-3 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
         >
           Gain insights into who is clicking your links. Knowing when and where
           people engage with your content helps inform better decisions.
@@ -55,10 +55,10 @@
     </div>
     <div class="flex lg:self-end">
       <div
-        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:w-10/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
+        class="flex flex-col relative mt-24 lg:mt-12 w-11/12 lg:h-56 max-w-md mx-auto px-8 py-10 lg:px-4 lg:py-8 rounded-md bg-white"
       >
         <div
-          class="absolute top-0 -mt-12 lg:ml-2 p-6 lg:p-4 self-center lg:self-start rounded-full bg-darkvoilet"
+          class="absolute top-0 -mt-12 lg:ml-3 p-6 lg:p-4 self-center lg:self-start rounded-full bg-darkvoilet"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
             <path
@@ -68,10 +68,10 @@
           </svg>
         </div>
         <h3
-          class="mt-8 mb-4 lg:mt-6 lg:ml-2 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
+          class="mt-8 mb-4 lg:mt-6 lg:ml-3 self-center lg:self-start text-neutral-verydarkblue text-xl font-bold"
         >Fully Customizable</h3>
         <p
-          class="self-center lg:self-start lg:ml-2 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
+          class="self-center lg:self-start lg:mx-3 text-neutral-grayishvoilet leading-xl text-center lg:text-left text-tiny font-medium"
         >
           Improve brand awareness and content discoverabilty through
           customizable links, supercharging audience engagement.

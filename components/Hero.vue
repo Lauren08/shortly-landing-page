@@ -313,7 +313,7 @@
 
 @screen lg {
   .hero-btn {
-    @apply mx-0 mt-6 mb-0;
+    @apply mx-0 mt-8 mb-0;
   }
 }
 </style>
