@@ -1,6 +1,6 @@
 <template>
   <header
-    class="md:w-11/12 md:max-w-screen-lg mx-auto flex items-center md:items-start justify-between pt-10"
+    class="flex items-center md:items-start justify-between md:w-11/12 md:max-w-screen-lg mt-2 mx-auto pt-10"
   >
     <svg
       class="ml-6 md:ml-0 self-center"
