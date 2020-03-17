@@ -13,7 +13,7 @@ const addHeaders = {
   "Referrer-Policy": "same-origin",
   "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
   "X-Content-Type-Options": "nosniff",
-  "X-Frame-Options": "DENY",
+  "X-Frame-Options": "ALLOW-FROM https://www.frontendmentor.io",
   "X-XSS-Protection": "1; mode=block"
 };
 
