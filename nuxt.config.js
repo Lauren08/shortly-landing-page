@@ -1,5 +1,5 @@
 export default {
-  mode: "universal",
+  mode: "spa",
   head: {
     title: "Shortly Landing Page",
     meta: [
@@ -22,7 +22,7 @@ export default {
   },
   loading: { color: "#2ACFCF" },
   css: [],
-  plugins: [{ src: "~/plugins/vue-session", mode: "client" }],
+  plugins: [{ src: "~/plugins/vue-session" }],
   buildModules: ["@nuxtjs/tailwindcss"],
   modules: ["@nuxtjs/sentry", "@nuxtjs/pwa"],
   sentry: {
