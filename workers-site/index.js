@@ -7,7 +7,7 @@ import { log } from "./sentry";
 // HTTP Security Headers
 const addHeaders = {
   "Content-Security-Policy":
-    "default-src *; script-src 'self' 'unsafe-eval' 'unsafe-inline' static.cloudflareinsights.com cdn.ravenjs.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src * data:; frame-ancestors https://www.frontendmentor.io; report-uri https://sentry.io/api/2766050/security/?sentry_key=235750b25c4c4e5da45c6e144a111eb5",
+    "default-src *; script-src 'self' 'unsafe-eval' 'unsafe-inline' static.cloudflareinsights.com cdn.jsdelivr.net cdn.ravenjs.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com; img-src * data:; frame-ancestors https://www.frontendmentor.io; report-uri https://sentry.io/api/2766050/security/?sentry_key=235750b25c4c4e5da45c6e144a111eb5",
   "Expect-CT":
     "max-age=604800, report-uri https://sentry.io/api/2766050/security/?sentry_key=235750b25c4c4e5da45c6e144a111eb5; report-to default",
   "Referrer-Policy": "same-origin",
