@@ -2,20 +2,26 @@
 # yarn lockfile v1
 
 
-"@cloudflare/kv-asset-handler@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@cloudflare/kv-asset-handler/-/kv-asset-handler-0.0.9.tgz#b49247eb49819080ed0db796992e6e5dd7cd81ce"
-  integrity sha512-OP+uwr+5VShB9ktzJvkwy1AibGaTV7EoHs/YMemUY56fgnqI+IlV++e4T6cTUfHDAfE/pdXMx7q4zMf90dU00Q==
+"@cloudflare/kv-asset-handler@0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@cloudflare/kv-asset-handler/-/kv-asset-handler-0.0.11.tgz#3f0200717c76d326122bd59b06074df27f9e3f4f"
+  integrity sha512-D2kGr8NF2Er//Mx0c4+8FtOHuLrnwOlpC48TbtyxRSegG/Js15OKoqxxlG9BMUj3V/YSqtN8bUU6pjaRlsoSqg==
   dependencies:
-    "@types/mime" "^2.0.1"
-    mime "^2.4.4"
+    "@cloudflare/workers-types" "^2.0.0"
+    "@types/mime" "^2.0.2"
+    mime "^2.4.6"
 
-"@types/mime@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.1.tgz#dc488842312a7f075149312905b5e3c0b054c79d"
-  integrity sha512-FwI9gX75FgVBJ7ywgnq/P7tw+/o1GUbtP0KzbtusLigAOgIgNISRK0ZPl4qertvXSIE8YbsVJueQ90cDt9YYyw==
+"@cloudflare/workers-types@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@cloudflare/workers-types/-/workers-types-2.0.0.tgz#c57162155bd83744a0fa83276ffec0ad430f14e4"
+  integrity sha512-SFUPQzR5aV2TBLP4Re+xNX5KfAGArcRGA44OLulBDnfblEf3J+6kFvdJAQwFhFpqru3wImwT1cX0wahk6EeWTw==
 
-mime@^2.4.4:
-  version "2.4.4"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.4.tgz#bd7b91135fc6b01cde3e9bae33d659b63d8857e5"
-  integrity sha512-LRxmNwziLPT828z+4YkNzloCFC2YM4wrB99k+AV5ZbEyfGNWfG8SO1FUXLmLDBSo89NrJZ4DIWeLjy1CHGhMGA==
+"@types/mime@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@types/mime/-/mime-2.0.2.tgz#857a118d8634c84bba7ae14088e4508490cd5da5"
+  integrity sha512-4kPlzbljFcsttWEq6aBW0OZe6BDajAmyvr2xknBG92tejQnvdGtT9+kXSZ580DqpxY9qG2xeQVF9Dq0ymUTo5Q==
+
+mime@^2.4.6:
+  version "2.4.6"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-2.4.6.tgz#e5b407c90db442f2beb5b162373d07b69affa4d1"
+  integrity sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
